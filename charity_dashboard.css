@@ -1,0 +1,152 @@
+body{
+    margin: 0px;
+    font-family: 'Work Sans', sans-serif;
+    background-color: var(--bene-chrome-low);
+    /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+}
+
+.preload * {
+    -webkit-transition: none !important;
+    -moz-transition: none !important;
+    -ms-transition: none !important;
+    -o-transition: none !important;
+    transition: none !important;
+}
+
+:root {
+    --bene-red: #BA3027;
+    --bene-lightblue: #EDF3F8;
+    --bene-base-medium: #7A7A7A;
+    --bene-base-high: #000;
+    --bene-chrome-low: #F9F9F9;
+    --bene-chrome-medium: #fcfcfc;
+  }
+
+.navbar img{
+    padding: 30px;
+}
+.navbar {
+    height: 100vh;
+    width: 300;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: var(--bene-lightblue);
+    overflow-x: hidden;
+    transition: 0.5s;
+    
+  }
+  
+  .navbar a {
+      
+    padding: 20px 15px;
+    margin: 10px 20px;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--bene-base-medium);
+    display: block;
+    transition: 0.3s;
+    border-radius: 5px;
+    text-decoration: none;
+    
+  }
+  
+  .navbar a:hover {
+    color: #000;
+    cursor: pointer;
+  }
+
+  .navbarselected{
+    padding: 20px 15px;
+    margin: 10px 20px;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+    color: #000 !important;
+    display: block;
+    transition: 0.3s;
+    background-color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    filter: drop-shadow(0px 15px 30px rgba(0, 0, 0, 0.05));
+  }
+
+  .navfooter{
+      display: none;
+  }
+
+  .workspace{
+      margin-left: 300px;
+      
+  }
+
+  .header{
+      height: 100px;
+      background-color: #fff;
+      filter: drop-shadow(0px 15px 30px rgba(0, 0, 0, 0.05));
+  }
+
+  .header img{
+      margin-left: 20px;
+      margin-top: 50px;
+  }
+
+  .bene-light-header{
+      font-weight: 300;
+      font-size: 32px;
+  }
+
+  .workspacecontent{
+      padding: 50px;
+  }
+
+  .campaignstable{
+      max-width: 700px;
+  }
+
+  .campaignstablehead{
+    display: grid;
+    grid-template-columns: 1fr 5fr 3fr 2fr;
+    margin-top: 50px;
+    font-size: 12px;
+    margin-left: 20px;
+    color: var(--bene-base-medium);
+  }
+
+  .campaignstablecard{
+    background-color: #fff;
+    filter: drop-shadow(0px 15px 30px rgba(0, 0, 0, 0.05));
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 5fr 3fr 2fr;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 15px;
+   
+  }
+
+  .campaignstablecard > div{
+    padding: 24px 20px;
+  }
+
+  .tablecardaction{
+      background-color: var(--bene-chrome-medium);
+      text-align: center;
+      color: var(--bene-base-medium);
+      font-size: 15px;
+      border-top-right-radius: 5px;
+      border-bottom-right-radius: 5px;
+      min-width: 100px;
+  }
+  .tablecardaction a{
+      text-decoration: none;
+      color: var(--bene-base-medium);
+  }
+
+  .tablecardaction a:hover{
+      /* text-decoration: underline; */
+      cursor: pointer;
+
+  }
