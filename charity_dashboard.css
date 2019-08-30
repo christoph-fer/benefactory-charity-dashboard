@@ -98,7 +98,8 @@ body {
   background-color: #fff;
   border-radius: 5px;
   text-decoration: none;
-  filter: drop-shadow(0px 15px 30px rgba(0, 0, 0, 0.05));
+  /* filter: drop-shadow(0px 15px 30px rgba(0, 0, 0, 0.05)); */
+  filter: drop-shadow(0px 15px 30px rgba(146, 197, 232, 0.1));
 }
 
 .navfooter {
@@ -300,7 +301,7 @@ body {
   display: none;
 
 
-  animation: fadein 300ms;
+  /* animation: fadein 300ms; */
 }
 
 .modalbox {
