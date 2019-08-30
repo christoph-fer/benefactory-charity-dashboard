@@ -7,8 +7,10 @@
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap" rel="stylesheet">
         <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
         <link rel="stylesheet" type="text/css" href="charity_dashboard.css">
-        <title>Campaigns | Charity Dashboard</title>
 
+        <title>Clean Drinking | Charity Dashboard</title>
+
+        
         <!-- <script>
                 $(document).ready(function() {
                 $("body").removeClass("preload");
@@ -32,8 +34,16 @@
                 <div class="modal-title">
                     <span>Edit Campaign Description</span>
                     <div class="modal-button">
-                            <input class="inputbutton-tertiary" type="button" value="Cancel"/>
+                        <input id="edit-modal-close" class="inputbutton-tertiary" type="button" value="Cancel"/>
                         <input id="edit-modal-close" class="inputbutton-small" type="button" value="Done"/>
+                     </div>
+                     <div>
+                         <div id="toolbar">
+
+                         </div>
+                         <div id="editor">
+
+                         </div>
                      </div>
                 </div>
                 <div>
@@ -167,6 +177,12 @@
                                 </span>
                             </div>
                     </div>
+
+                    <br>
+
+                    <div>
+                        <span class="bene-caps-small">BRAND PARTNERS</span><br>
+                    </div>
                         
 
                 </div>
@@ -175,6 +191,8 @@
 
 
         <script>
+
+                
                 // Get the modal
                 var modal = document.getElementById("editModal");
                 
