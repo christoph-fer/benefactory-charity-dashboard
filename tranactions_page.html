@@ -19,8 +19,8 @@
 
 <body class="preload">
     <div class="wrapper">
-        <div class="navbar">
-            <!-- <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> -->
+        <div class="navbar" id="navBar">
+
 
             <img src="Assets/ACT NOW - Benefactory.png" height="50px">
 
@@ -35,23 +35,25 @@
         </div>
         <div class="workspace">
             <div class="header">
-                <img src="Assets/transaction_header.svg" height="31px">
+                <!-- <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a><br> -->
+                <img class="ham_menu" id="hamMenu" onclick="openNav()" src="Assets/ham_menu.svg" height="12px">
+                <img class="header_title" src="Assets/transaction_header.svg" height="31px">
             </div>
             <div class="workspacecontent">
                 <span class="bene-light-header">Transaction History</span>
 
                 <div class="transactionstable">
                     <div class="transactionstablehead">
-                        <div>
+                        <div class="tableidname">
                             <span>| PAYMENT ID</span>
                         </div>
-                        <div>
+                        <div class="tablepay">
                             <span>| AMOUNT</span>
                         </div>
-                        <div>
+                        <div class="tableno">
                             <span>| CONTACT</span>
                         </div>
-                        <div>
+                        <div class="tableemail">
                             <span>| E-MAIL</span>
                         </div>
 
@@ -60,84 +62,168 @@
                     <br>
 
                     <div class="transactionstablecard">
-                        <div>
+                        <div class="tableidname">
                             <span>Umair Ventures</span>
                         </div>
-                        <div>
+                        <div class="tablepay">
                             <span>$200</span>
                         </div>
-                        <div>
+                        <div class="tableno">
                             <span>9892091819</span>
                         </div>
-                        <div>
+                        <div class="tableemail">
                             <span>employee@volvmedia.com</span>
                         </div>
 
                     </div>
 
                     <div class="transactionstablecard">
-                        <div>
+                        <div class="tableidname">
                             <span>Shekar Flutters</span>
                         </div>
-                        <div>
+                        <div class="tablepay">
                             <span>$500</span>
                         </div>
-                        <div>
+                        <div class="tableno">
                             <span>9892091819</span>
                         </div>
-                        <div>
+                        <div class="tableemail">
                             <span>employee@volvmedia.com</span>
                         </div>
 
                     </div>
 
                     <div class="transactionstablecard">
-                        <div>
+                        <div class="tableidname">
                             <span>I Stutters</span>
                         </div>
-                        <div>
+                        <div class="tablepay">
                             <span>$2300</span>
                         </div>
-                        <div>
+                        <div class="tableno">
                             <span>9892091819</span>
                         </div>
-                        <div>
+                        <div class="tableemail">
                             <span>employee@volvmedia.com</span>
                         </div>
 
                     </div>
 
                     <div class="transactionstablecard">
-                        <div>
+                        <div class="tableidname">
                             <span>Mayur Writters</span>
                         </div>
-                        <div>
+                        <div class="tablepay">
                             <span>$7500</span>
                         </div>
-                        <div>
+                        <div class="tableno">
                             <span>9892091819</span>
                         </div>
-                        <div>
+                        <div class="tableemail">
                             <span>employee@volvmedia.com</span>
                         </div>
 
                     </div>
 
                     <div class="transactionstablecard">
-                        <div>
+                        <div class="tableidname">
                             <span>Volv Clutters</span>
                         </div>
-                        <div>
+                        <div class="tablepay">
                             <span>$420,000</span>
                         </div>
-                        <div>
+                        <div class="tableno">
                             <span>9892091819</span>
                         </div>
-                        <div>
+                        <div class="tableemail">
                             <span>employee@volvmedia.com</span>
                         </div>
 
                     </div>
+
+                    <div class="transactionstablecard">
+                        <div class="tableidname">
+                            <span>Umair Ventures</span>
+                        </div>
+                        <div class="tablepay">
+                            <span>$200</span>
+                        </div>
+                        <div class="tableno">
+                            <span>9892091819</span>
+                        </div>
+                        <div class="tableemail">
+                            <span>employee@volvmedia.com</span>
+                        </div>
+
+                    </div>
+
+                    <div class="transactionstablecard">
+                        <div class="tableidname">
+                            <span>Shekar Flutters</span>
+                        </div>
+                        <div class="tablepay">
+                            <span>$500</span>
+                        </div>
+                        <div class="tableno">
+                            <span>9892091819</span>
+                        </div>
+                        <div class="tableemail">
+                            <span>employee@volvmedia.com</span>
+                        </div>
+
+                    </div>
+
+                    <div class="transactionstablecard">
+                        <div class="tableidname">
+                            <span>I Stutters</span>
+                        </div>
+                        <div class="tablepay">
+                            <span>$2300</span>
+                        </div>
+                        <div class="tableno">
+                            <span>9892091819</span>
+                        </div>
+                        <div class="tableemail">
+                            <span>employee@volvmedia.com</span>
+                        </div>
+
+                    </div>
+
+                    <div class="transactionstablecard">
+                        <div class="tableidname">
+                            <span>Mayur Writters</span>
+                        </div>
+                        <div class="tablepay">
+                            <span>$7500</span>
+                        </div>
+                        <div class="tableno">
+                            <span>9892091819</span>
+                        </div>
+                        <div class="tableemail">
+                            <span>employee@volvmedia.com</span>
+                        </div>
+
+                    </div>
+
+                    <div class="transactionstablecard">
+                        <div class="tableidname">
+                            <span>Volv Clutters</span>
+                        </div>
+                        <div class="tablepay">
+                            <span>$420,000</span>
+                        </div>
+                        <div class="tableno">
+                            <span>9892091819</span>
+                        </div>
+                        <div class="tableemail">
+                            <span>employee@volvmedia.com</span>
+                        </div>
+
+                    </div>
+
+
+
+
 
 
 
@@ -155,6 +241,16 @@
             </div>
         </div>
     </div>
+
+    <script>
+        function openNav() {
+            document.getElementById("navBar").style.width = "300px";
+        }
+
+        // function closeNav() {
+        //     document.getElementById("mySidenav").style.width = "0";
+        // }
+    </script>
 </body>
 
 </html>

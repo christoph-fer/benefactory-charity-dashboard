@@ -58,12 +58,12 @@ body {
   height: 100vh;
   width: 300;
   position: fixed;
-  z-index: 1;
+  z-index: 50;
   top: 0;
   left: 0;
   background-color: var(--bene-lightblue);
   overflow-x: hidden;
-  transition: 0.5s;
+  transition: 0.3s ease-out;
 }
 
 .navbar a {
@@ -107,6 +107,17 @@ body {
 .workspace {
   animation: fadein 300ms;
   margin-left: 300px;
+}
+.ham_menu {
+  display: none;
+  margin-bottom: 5px;
+}
+
+.ham_menu:hover {
+  cursor: pointer;
+}
+
+.header_title {
 }
 
 .header {
@@ -362,7 +373,7 @@ body {
 }
 
 .transactionstable {
-  max-width: 600px;
+  max-width: 900px;
   overflow: auto;
   white-space: nowrap;
 }
@@ -373,7 +384,8 @@ body {
   margin-top: 50px;
   font-size: 12px;
   color: var(--bene-base-medium);
-  margin-left: 10px;
+  /* margin-left: 10px; */
+  /* min-width: 700px; */
 }
 
 .transactionstablecard {
@@ -383,8 +395,28 @@ body {
   font-size: 15px;
 }
 
+.transactionstablehead > div {
+  padding: 12px 10px;
+}
+
 .transactionstablecard > div {
   padding: 12px 10px;
+}
+
+.tableidname {
+  min-width: 130px;
+}
+
+.tablepay {
+  min-width: 100px;
+}
+
+.tableno {
+  min-width: 130px;
+}
+
+.tableemail {
+  min-width: 200px;
 }
 
 .accountinfo {
@@ -433,6 +465,28 @@ select {
   border: 1px solid #e2e2e2;
   border-radius: 3px;
   outline: none;
+}
+
+@media only screen and (max-width: 800px) {
+  .workspacecontent {
+    padding: 130px 20px;
+  }
+  .workspace {
+    margin-left: 0px;
+  }
+  .navbar {
+    width: 0px;
+  }
+  .header_title {
+    height: 26px;
+  }
+  .header img {
+    margin-left: 20px;
+    margin-top: 20px;
+  }
+  .ham_menu {
+    display: block;
+  }
 }
 
 @keyframes fadein {
