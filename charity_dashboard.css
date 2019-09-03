@@ -347,6 +347,12 @@ body {
 
 .modal-button {
   text-align: end;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 1fr 1fr;
+  width: 120px;
+  margin-left: auto;
+  margin-right: 10px;
 }
 
 .modalcontent {
@@ -360,7 +366,7 @@ body {
   font-size: 14px;
   font-weight: 500;
   padding: 7px 20px;
-  margin-left: 10px;
+  /* margin-left: 10px; */
   color: #fff;
   background-color: #ba3027;
   border: none;
@@ -435,10 +441,10 @@ body {
 
 label {
   font-family: "Work Sans", sans-serif;
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 500;
   letter-spacing: 0.5px;
-  color: #ba3027;
+  color: var(--bene-base-medium);
   line-height: 27px;
 }
 
