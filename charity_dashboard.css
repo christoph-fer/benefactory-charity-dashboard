@@ -58,7 +58,7 @@ body {
   height: 100vh;
   width: 300;
   position: fixed;
-  z-index: 50;
+  z-index: 20;
   top: 0;
   left: 0;
   background-color: var(--bene-lightblue);
@@ -316,7 +316,7 @@ body {
   height: 100%;
   width: 100%;
   position: fixed;
-  z-index: 20;
+  z-index: 50;
   display: none;
 
   /* animation: fadein 300ms; */
@@ -324,13 +324,15 @@ body {
 
 .modalbox {
   background-color: #fff;
-  height: 500px;
-  width: 700px;
+  height: auto;
+  min-height: 200px;
+  width: auto;
+  max-width: 700px;
   filter: drop-shadow(0px 20px 60px rgba(0, 0, 0, 0.1));
   border-radius: 5px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 10%;
+  margin-top: 50px;
 }
 
 .modal-title {
@@ -345,6 +347,12 @@ body {
 
 .modal-button {
   text-align: end;
+}
+
+.modalcontent {
+  overflow: auto;
+  white-space: nowrap;
+  height: 570px;
 }
 
 .inputbutton-small {
@@ -447,9 +455,16 @@ label {
   filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.1));
 }
 
-.modal-input {
+.modal-input-1 {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  padding: 30px;
+  grid-gap: 20px;
+}
+
+.modal-input-2 {
+  display: grid;
+  grid-template-columns: 1fr;
   padding: 30px;
   grid-gap: 20px;
 }
@@ -467,6 +482,12 @@ select {
   outline: none;
 }
 
+@media only screen and (max-width: 1100px) {
+  .accountinfo {
+    grid-template-columns: 1fr;
+  }
+}
+
 @media only screen and (max-width: 800px) {
   .workspacecontent {
     padding: 130px 12px;
@@ -476,6 +497,7 @@ select {
   }
   .navbar {
     width: 0px;
+    filter: drop-shadow(0px 15px 30px rgba(146, 197, 232, 0.1));
   }
   .header_title {
     height: 26px;
@@ -486,6 +508,21 @@ select {
   }
   .ham_menu {
     display: block;
+  }
+  .bene-light-header {
+    font-size: 26px;
+  }
+  .transactionstablehead {
+    margin-top: 20px;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .modalbox {
+    margin-top: 0px;
+  }
+  .modalcontent {
+    height: 100vh;
   }
 }
 
