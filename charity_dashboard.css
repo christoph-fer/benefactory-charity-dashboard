@@ -217,7 +217,7 @@ body {
 }
 
 .campaign-upload-image {
-  background-image: url(Assets/campaign-pic-2.jpeg);
+  background-image: url('assets/img/world_vision_logo.png');
   height: 200px;
   width: 300px;
   background-size: cover;
