@@ -101,7 +101,11 @@ body {
 }
 
 .navfooter {
-  display: none;
+  display: block;
+  margin: 20px;
+  bottom: 0;
+  align-content: flex-end;
+  border-top: var(--bene-chrome-low) solid 1px;
 }
 
 .workspace {
