@@ -59,7 +59,7 @@
     </div>
     <div class="wrapper">
 
-        <div class="navbar">
+        <div id="navBar" class="navbar">
             <!-- <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> -->
 
             <img src="Assets/ACT NOW - Benefactory.png" height="50px">
@@ -75,7 +75,8 @@
         </div>
         <div class="workspace">
             <div class="header">
-                <img src="Assets/campaigns_header.svg" height="31px">
+                <img class="ham_menu" id="hamMenu" onclick="openNav()" src="Assets/ham_menu.svg" height="12px">
+                <img class="header_title" src="Assets/campaigns_header.svg" height="31px">
             </div>
             <div class="workspacecontent">
                 <div>
@@ -216,6 +217,16 @@
                 $("#editModal").fadeOut(150);
             });
         });
+    </script>
+
+    <script>
+        function openNav() {
+            document.getElementById("navBar").style.width = "300px";
+        }
+
+        // function closeNav() {
+        //     document.getElementById("mySidenav").style.width = "0";
+        // }
     </script>
 </body>
 
