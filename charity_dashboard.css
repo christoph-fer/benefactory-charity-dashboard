@@ -469,7 +469,7 @@ select {
 
 @media only screen and (max-width: 800px) {
   .workspacecontent {
-    padding: 130px 20px;
+    padding: 130px 12px;
   }
   .workspace {
     margin-left: 0px;
@@ -481,7 +481,7 @@ select {
     height: 26px;
   }
   .header img {
-    margin-left: 20px;
+    margin-left: 12px;
     margin-top: 20px;
   }
   .ham_menu {
