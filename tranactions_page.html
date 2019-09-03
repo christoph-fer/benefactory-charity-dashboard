@@ -1,186 +1,160 @@
 <html>
-    <head>
-        <link rel="icon" href="Assets/ACT_NOW_Logo_(Med).png" type="image/png" sizes="16x16">
-        <link rel="stylesheet" type="text/css" href="charity_dashboard.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,600,700,800,900&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap" rel="stylesheet">
-        <title>Transactions | Charity Dashboard</title>
 
-        <script>
-                $(document).ready(function() {
-                $("body").removeClass("preload");
-                });
-        </script>
-        
-    </head>
-    <body class="preload">
-        <div class="wrapper">
-            <div class="navbar">
-                <!-- <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> -->
+<head>
+    <link rel="icon" href="Assets/ACT_NOW_Logo_(Med).png" type="image/png" sizes="16x16">
+    <link rel="stylesheet" type="text/css" href="charity_dashboard.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,600,700,800,900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap" rel="stylesheet">
+    <title>Transactions | Charity Dashboard</title>
 
-                <img src="Assets/ACT NOW - Benefactory.png" height="50px">
-                
-                <a href="home_page.html">Home</a>
-                <a href="profile_page.html">Profile</a>
-                <a class="navbarselected" href="tranactions_page.html">Transactions</a>
-                <a href="campaigns_page.html">Campaigns</a>
-                <div class="navfooter">
-                    <a href="#">Help</a>
-                    <a href="#">Logout</a>
-                </div>
+    <script>
+        $(document).ready(function () {
+            $("body").removeClass("preload");
+        });
+    </script>
+
+</head>
+
+<body class="preload">
+    <div class="wrapper">
+        <div class="navbar">
+            <!-- <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> -->
+
+            <img src="Assets/ACT NOW - Benefactory.png" height="50px">
+
+            <a href="home_page.html">Home</a>
+            <a href="profile_page.html">Profile</a>
+            <a class="navbarselected" href="tranactions_page.html">Transactions</a>
+            <a href="campaigns_page.html">Campaigns</a>
+            <div class="navfooter">
+                <a href="#">Help</a>
+                <a href="#">Logout</a>
             </div>
-            <div class="workspace">
-                <div class="header">
-                    <img src="Assets/transaction_header.svg" height="31px">
+        </div>
+        <div class="workspace">
+            <div class="header">
+                <img src="Assets/transaction_header.svg" height="31px">
+            </div>
+            <div class="workspacecontent">
+                <span class="bene-light-header">Transaction History</span>
+
+                <div class="transactionstable">
+                    <div class="transactionstablehead">
+                        <div>
+                            <span>| PAYMENT ID</span>
+                        </div>
+                        <div>
+                            <span>| AMOUNT</span>
+                        </div>
+                        <div>
+                            <span>| CONTACT</span>
+                        </div>
+                        <div>
+                            <span>| E-MAIL</span>
+                        </div>
+
+                    </div>
+
+                    <br>
+
+                    <div class="transactionstablecard">
+                        <div>
+                            <span>Umair Ventures</span>
+                        </div>
+                        <div>
+                            <span>$200</span>
+                        </div>
+                        <div>
+                            <span>9892091819</span>
+                        </div>
+                        <div>
+                            <span>employee@volvmedia.com</span>
+                        </div>
+
+                    </div>
+
+                    <div class="transactionstablecard">
+                        <div>
+                            <span>Shekar Flutters</span>
+                        </div>
+                        <div>
+                            <span>$500</span>
+                        </div>
+                        <div>
+                            <span>9892091819</span>
+                        </div>
+                        <div>
+                            <span>employee@volvmedia.com</span>
+                        </div>
+
+                    </div>
+
+                    <div class="transactionstablecard">
+                        <div>
+                            <span>I Stutters</span>
+                        </div>
+                        <div>
+                            <span>$2300</span>
+                        </div>
+                        <div>
+                            <span>9892091819</span>
+                        </div>
+                        <div>
+                            <span>employee@volvmedia.com</span>
+                        </div>
+
+                    </div>
+
+                    <div class="transactionstablecard">
+                        <div>
+                            <span>Mayur Writters</span>
+                        </div>
+                        <div>
+                            <span>$7500</span>
+                        </div>
+                        <div>
+                            <span>9892091819</span>
+                        </div>
+                        <div>
+                            <span>employee@volvmedia.com</span>
+                        </div>
+
+                    </div>
+
+                    <div class="transactionstablecard">
+                        <div>
+                            <span>Volv Clutters</span>
+                        </div>
+                        <div>
+                            <span>$420,000</span>
+                        </div>
+                        <div>
+                            <span>9892091819</span>
+                        </div>
+                        <div>
+                            <span>employee@volvmedia.com</span>
+                        </div>
+
+                    </div>
+
+
+
+
+
+
                 </div>
-                <div class="workspacecontent">
-                    <span class="bene-light-header">Transaction History</span>
 
-                    <div class="transactionstable">
-                        <div class="transactionstablehead">
-                            <div>
-                                <span>| PAYMENT ID</span>
-                            </div>
-                            <div>
-                                <span>| AMOUNT</span>
-                            </div>
-                            <div>
-                                <span>| CONTACT</span>
-                            </div>
-                            <div>
-                                <span>| E-MAIL</span>
-                            </div>
-                            
-                        </div>
+                <br>
+                <br>
 
-                        <br>
-
-                        <div class="transactionstablecard">
-                            <div>
-                                <span>1.</span>
-                            </div>
-                            <div>
-                                <span>Clean Drinking Water</span>
-                            </div>
-                            <div>
-                                <span>16,420</span>
-                            </div>
-                            <div>
-                                <span>employee@volvmedia.com</span>
-                            </div>
-                            
-                        </div>
-
-                        <div class="transactionstablecard">
-                            <div>
-                                <span>2.</span>
-                            </div>
-                            <div>
-                                <span>Digitally EmpowHER</span>
-                            </div>
-                            <div>
-                                <span>45,670</span>
-                            </div>
-                            <div>
-                                <span>employee@volvmedia.com</span>
-                            </div>
-                            
-                        </div>
-
-                        <div class="transactionstablecard">
-                            <div>
-                                <span>3.</span>
-                            </div>
-                            <div>
-                                <span>Kerala Flood Relief</span>
-                            </div>
-                            <div>
-                                <span>198,420</span>
-                            </div>
-                            <div>
-                                <span>employee@volvmedia.com</span>
-                            </div>
-                            
-                        </div>
-
-                        <div class="transactionstablecard">
-                            <div>
-                                <span>3.</span>
-                            </div>
-                            <div>
-                                <span>Kerala Flood Relief</span>
-                            </div>
-                            <div>
-                                <span>198,420</span>
-                            </div>
-                            <div>
-                                <span>employee@volvmedia.com</span>
-                            </div>
-                            
-                        </div>
-
-                        <div class="transactionstablecard">
-                            <div>
-                                <span>3.</span>
-                            </div>
-                            <div>
-                                <span>Kerala Flood Relief</span>
-                            </div>
-                            <div>
-                                <span>198,420</span>
-                            </div>
-                            <div>
-                                <span>employee@volvmedia.com</span>
-                            </div>
-                            
-                        </div>
-
-                        <div class="transactionstablecard">
-                            <div>
-                                <span>3.</span>
-                            </div>
-                            <div>
-                                <span>Kerala Flood Relief</span>
-                            </div>
-                            <div>
-                                <span>198,420</span>
-                            </div>
-                            <div>
-                                <span>employee@volvmedia.com</span>
-                            </div>
-                            
-                        </div>
-
-                        <div class="transactionstablecard">
-                            <div>
-                                <span>3.</span>
-                            </div>
-                            <div>
-                                <span>Kerala Flood Relief</span>
-                            </div>
-                            <div>
-                                <span>198,420</span>
-                            </div>
-                            <div>
-                                <span>employee@volvmedia.com</span>
-                            </div>
-                            
-                        </div>
-
-                
-                    
-                            
-                    </div>
-
-                    <br>
-                    <br>
-
-                    <div>
-                        <input class="inputbutton" type="button" value="EXPORT TO EXCEL"/>
-                    </div>
+                <div>
+                    <input class="inputbutton" type="button" value="EXPORT TO EXCEL" />
                 </div>
             </div>
         </div>
-    </body>
+    </div>
+</body>
+
 </html>

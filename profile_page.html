@@ -18,6 +18,46 @@
 </head>
 
 <body class="preload">
+    <div class="modal w3-animate-opacity" id="editModal">
+        <div class="modalbox w3-container w3-center w3-animate-top">
+
+            <!-- w3-container w3-center w3-animate-top -->
+
+            <div class="modal-title">
+                <span>Edit Profile Information</span>
+                <div class="modal-button">
+                    <input id="edit-modal-close" class="inputbutton-tertiary" type="button" value="Cancel" />
+                    <input id="edit-modal-close" class="inputbutton-small" type="button" value="Done" />
+                </div>
+            </div>
+            <div class="modal-input">
+                <div>
+                    <label>FIRST NAME</label><br>
+                    <input class="inputtext" type="text" class="form-control" placeholder="Enter First Name"
+                        name="First_Name">
+                </div>
+                <div>
+                    <label>FIRST NAME</label><br>
+                    <input class="inputtext" type="text" class="form-control" placeholder="Enter First Name"
+                        name="First_Name">
+                </div>
+                <div>
+                    <label>MOBILE NO.</label><br>
+                    <input class="inputtext" type="text" class="form-control" placeholder="Enter First Name"
+                        name="First_Name">
+                </div>
+                <div>
+                    <label>COUNTRY</label><br>
+                    <select>
+                        <option>INDIA</option>
+                        <option>USA</option>
+                    </select>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
     <div class="wrapper">
         <div class="navbar">
             <!-- <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> -->
@@ -42,6 +82,20 @@
                 <br><br>
                 <div class="accountinfo">
                     <div>
+                        <div>
+                            <span class="bene-caps-small">LOGO</span><br>
+                        </div>
+                        <div>
+                            <div class="profile-upload-image">
+                                <!-- <div>
+                                    <a class="inputbutton-tertiary" href="">Upload Image</a><a
+                                        class="hyperlink-button-secondary" href=""> Remove</a>
+                                </div> -->
+                            </div>
+                        </div>
+
+                        <br>
+
                         <div>
                             <span class="bene-caps-small">FIRST NAME</span><br>
                         </div>
@@ -86,11 +140,9 @@
                         </div>
 
                         <br>
-                        <br>
 
-                        <div>
-                            <input class="inputbutton" type="button" value="EDIT INFO" />
-                        </div>
+
+
 
                     </div>
                     <div>
@@ -131,10 +183,25 @@
                         </div>
 
                     </div>
+                    <div>
+                        <input id="editButton" class="inputbutton" type="button" value="EDIT INFO" />
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(() => {
+            $("#editButton").click(() => {
+                $("#editModal").fadeIn(150);
+            });
+            $("#edit-modal-close").click(() => {
+                $("#editModal").fadeOut(150);
+            });
+        });
+    </script>
 </body>
 
 </html>

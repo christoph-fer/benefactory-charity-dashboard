@@ -1,6 +1,4 @@
 body {
-
-
   -webkit-touch-callout: none;
   /* iOS Safari */
   -webkit-user-select: none;
@@ -16,7 +14,7 @@ body {
   supported by Chrome and Opera */
 
   margin: 0px;
-  font-family: 'Work Sans', sans-serif;
+  font-family: "Work Sans", sans-serif;
   background-color: var(--bene-chrome-low);
   /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
 }
@@ -43,13 +41,13 @@ body {
 }
 
 :root {
-  --bene-red: #BA3027;
-  --bene-lightblue: #EDF3F8;
-  --bene-base-medium: #7A7A7A;
+  --bene-red: #ba3027;
+  --bene-lightblue: #edf3f8;
+  --bene-base-medium: #7a7a7a;
   --bene-base-high: #000;
-  --bene-chrome-low: #F9F9F9;
+  --bene-chrome-low: #f9f9f9;
   --bene-chrome-medium: #fcfcfc;
-  --bene-chrome-medium-high: #F1F1F1;
+  --bene-chrome-medium-high: #f1f1f1;
 }
 
 .navbar img {
@@ -110,7 +108,6 @@ body {
   animation: fadein 300ms;
   margin-left: 300px;
 }
-
 
 .header {
   position: fixed;
@@ -176,7 +173,7 @@ body {
   font-size: 15px;
 }
 
-.campaignstablecard>div {
+.campaignstablecard > div {
   padding: 24px 20px;
 }
 
@@ -212,7 +209,19 @@ body {
   background-repeat: no-repeat;
 }
 
-.campaign-upload-image>div {
+.profile-upload-image {
+  background-image: url(Assets/world_vision_logo.png);
+  height: 100px;
+  width: 200px;
+  background-size: contain;
+  border-radius: 5px;
+  /* filter: drop-shadow(0px 5px 10px rgba(0, 0, 0, 0.1)); */
+  margin-top: 5px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.campaign-upload-image > div {
   position: absolute;
   bottom: 0;
   right: 0;
@@ -232,7 +241,8 @@ body {
 
 .editable-text-box {
   display: flexbox;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   border-radius: 5px;
   background-color: var(--bene-chrome-medium-high);
   padding: 10px;
@@ -278,8 +288,6 @@ body {
   transition: 300ms;
   /* letter-spacing: 2px; */
   color: var(--bene-red);
-
-
 }
 
 .inputbutton-tertiary:hover {
@@ -300,7 +308,6 @@ body {
   z-index: 20;
   display: none;
 
-
   /* animation: fadein 300ms; */
 }
 
@@ -313,7 +320,6 @@ body {
   margin-left: auto;
   margin-right: auto;
   margin-top: 10%;
-
 }
 
 .modal-title {
@@ -324,9 +330,7 @@ body {
   font-size: 17px;
   border-bottom: var(--bene-chrome-medium-high) solid 1px;
   align-items: center;
-
 }
-
 
 .modal-button {
   text-align: end;
@@ -358,12 +362,14 @@ body {
 }
 
 .transactionstable {
-  max-width: 700px;
+  max-width: 600px;
+  overflow: auto;
+  white-space: nowrap;
 }
 
 .transactionstablehead {
   display: grid;
-  grid-template-columns: 3fr 5fr 3fr 5fr;
+  grid-template-columns: 3fr 2fr 3fr 5fr;
   margin-top: 50px;
   font-size: 12px;
   color: var(--bene-base-medium);
@@ -372,12 +378,12 @@ body {
 
 .transactionstablecard {
   display: grid;
-  grid-template-columns: 3fr 5fr 3fr 5fr;
+  grid-template-columns: 3fr 2fr 3fr 5fr;
   font-weight: 500;
   font-size: 15px;
 }
 
-.transactionstablecard>div {
+.transactionstablecard > div {
   padding: 12px 10px;
 }
 
@@ -387,7 +393,47 @@ body {
   max-width: 800px;
 }
 
+label {
+  font-family: "Work Sans", sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  color: #ba3027;
+  line-height: 27px;
+}
 
+.inputtext {
+  font-family: "Work Sans", sans-serif;
+  font-size: 13px;
+  padding: 10px;
+  width: 100%;
+  border: 1px solid #e2e2e2;
+  border-radius: 3px;
+  outline: none;
+}
+.inputtext:focus {
+  filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.1));
+}
+
+.modal-input {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 30px;
+  grid-gap: 20px;
+}
+
+option {
+  padding: 50px;
+}
+select {
+  font-family: "Work Sans", sans-serif;
+  font-size: 13px;
+  padding: 10px;
+  width: 100%;
+  border: 1px solid #e2e2e2;
+  border-radius: 3px;
+  outline: none;
+}
 
 @keyframes fadein {
   from {
