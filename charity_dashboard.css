@@ -494,6 +494,12 @@ select {
   }
 }
 
+@media all and (-ms-min-device-pixel-ratio: 0) and (min-resolution: 0.001dpcm) {
+  .header {
+    background-color: rgba(255, 255, 255, 0.6);
+  }
+}
+
 @media only screen and (max-width: 1100px) {
   .accountinfo {
     grid-template-columns: 1fr;
