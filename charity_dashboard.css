@@ -44,11 +44,13 @@ body {
   --bene-red: #ba3027;
   --bene-lightblue: #edf3f8;
   --bene-blue: #92c5e8;
+  --bene-base-low: #fff;
   --bene-base-medium: #7a7a7a;
   --bene-base-high: #000;
   --bene-chrome-low: #f9f9f9;
   --bene-chrome-medium: #fcfcfc;
   --bene-chrome-medium-high: #f1f1f1;
+  --bene-chrome-high: #fff;
 }
 
 .navbar img {
@@ -464,6 +466,15 @@ label {
   line-height: 27px;
 }
 
+.bene-label {
+  font-family: "Work Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  color: var(--bene-base-medium);
+  /* line-height: 27px; */
+}
+
 .inputtext {
   font-family: "Work Sans", sans-serif;
   font-size: 13px;
@@ -526,6 +537,46 @@ textarea {
   max-width: 700px;
   min-height: 300px;
   width: auto;
+}
+
+.activecampaigns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 560px;
+  margin-top: 20px;
+}
+
+.listviewmedium {
+  display: grid;
+  grid-template-columns: 120px 230px;
+  height: 120px;
+  background-color: var(--bene-chrome-high);
+  filter: drop-shadow(0px 5px 10px rgba(0, 0, 0, 0.05));
+  width: fit-content;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 200ms ease-out;
+  align-content: flex-start;
+}
+
+.listviewmedium:hover {
+  filter: drop-shadow(0px 15px 30px rgba(0, 0, 0, 0.05));
+}
+
+.listviewimg > img {
+  /* background-image: url("Assets/amazon-brazil-fire.jpg"); */
+  /* background-size: cover; */
+  background-repeat: no-repeat;
+  border-radius: 5px 0px 0px 5px;
+  height: 120px;
+  width: 120px;
+  background-position: center;
+  object-fit: cover;
+}
+
+.listviewcontent {
+  width: 230px;
+  padding: 10px 20px;
 }
 
 @media all and (-webkit-min-device-pixel-ratio: 0) and (min-resolution: 0.001dpcm) {
